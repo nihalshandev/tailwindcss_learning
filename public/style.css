@@ -32444,6 +32444,16 @@ video {
 .btn {
   cursor: pointer;
   border-radius: 9999px;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 99, 99, var(--tw-border-opacity));
+}
+
+.btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 99, 99, var(--tw-bg-opacity));
+}
+
+.btn{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
@@ -32453,6 +32463,52 @@ video {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(255, 99, 99, var(--tw-text-opacity));
+}
+
+.btn:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+@media (min-width: 768px){
+  .btn{
+    border-width: 2px;
+  }
+}
+
+.btn-more {
+  cursor: pointer;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(226, 226, 213, var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(136, 136, 131, var(--tw-text-opacity));
+}
+
+.btn-more:hover{
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 640px){
